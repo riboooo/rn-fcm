@@ -7,11 +7,20 @@ messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('Message handled in the background!', remoteMessage);
 });
 const domain = 'http://www.naver.com/';
+
+const checkToken = async () => {
+  const fcmToken = await messaging().getToken();
+  if (fcmToken) {
+    console.log(fcmToken);
+    return fcmToken;
+  }
+};
+checkToken();
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      indexPage: {uri: domain + '?ver=1'},
+      indexPage: {uri: domain + '?ver=1', headers: {fcmTocken: checkToken}},
     };
   }
 
