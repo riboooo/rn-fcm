@@ -1,0 +1,6 @@
+module Pods_osolapp {
+  umbrella header "Pods-osolapp-umbrella.h"
+
+  export *
+  module * { export * }
+}

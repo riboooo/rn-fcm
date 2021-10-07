@@ -1,0 +1,92 @@
+{
+  "project_info": {
+    "project_number": "907832228049",
+    "project_id": "testproject-cdc01",
+    "storage_bucket": "testproject-cdc01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907832228049:android:f416c4577a672127086df0",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907832228049-3l0tgtlvk2dlojh1s2uho649n85tl4qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_4V5hUpbn8EHZvHVeHi0g9g8PYlApJlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907832228049-3l0tgtlvk2dlojh1s2uho649n85tl4qt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "907832228049-c65ph1sddteoai7f8qbcng78an9fo8at.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jun.123.123",
+                "app_store_id": "123123"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907832228049:android:497f499bff9ebf14086df0",
+        "android_client_info": {
+          "package_name": "com.osolapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907832228049-qf021r84d732lqklefjnf8r2efv9p00g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.osolapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "907832228049-3l0tgtlvk2dlojh1s2uho649n85tl4qt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_4V5hUpbn8EHZvHVeHi0g9g8PYlApJlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907832228049-3l0tgtlvk2dlojh1s2uho649n85tl4qt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "907832228049-c65ph1sddteoai7f8qbcng78an9fo8at.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jun.123.123",
+                "app_store_id": "123123"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
