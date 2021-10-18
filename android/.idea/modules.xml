@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/osolapp.iml" filepath="$PROJECT_DIR$/.idea/modules/osolapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/osolapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/osolapp.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-784662362/osolapp.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/-784662362/osolapp.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/41597641/osolapp.react-native-firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/41597641/osolapp.react-native-firebase_messaging.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/60808246/osolapp.react-native-webview.iml" filepath="$PROJECT_DIR$/.idea/modules/60808246/osolapp.react-native-webview.iml" />
     </modules>
   </component>

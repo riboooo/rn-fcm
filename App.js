@@ -6,7 +6,7 @@ import messaging from '@react-native-firebase/messaging';
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('Message handled in the background!', remoteMessage);
 });
-const domain = 'http://www.naver.com/';
+const domain = 'http://krp.kaist.ac.kr';
 
 const checkToken = async () => {
   const fcmToken = await messaging().getToken();
