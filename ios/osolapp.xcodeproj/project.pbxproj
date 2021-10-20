@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* osolappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* osolappTests.m */; };
 		0154D7A96B4D682848875768 /* libPods-osolapp-osolappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0593F9788C771CEB088FD933 /* libPods-osolapp-osolappTests.a */; };
-		083A02D6270ABEBB00856D39 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 083A02D5270ABEBB00856D39 /* GoogleService-Info.plist */; };
+		08F30809272037C500B2B148 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08F30808272037C500B2B148 /* GoogleService-Info.plist */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -32,8 +32,8 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* osolappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = osolappTests.m; sourceTree = "<group>"; };
 		0593F9788C771CEB088FD933 /* libPods-osolapp-osolappTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-osolapp-osolappTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		083A02D5270ABEBB00856D39 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		088E9F89270A8A7C003B6625 /* osolapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = osolapp.entitlements; path = osolapp/osolapp.entitlements; sourceTree = "<group>"; };
+		08F30808272037C500B2B148 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* osolapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = osolapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = osolapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = osolapp/AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +100,7 @@
 		13B07FAE1A68108700A75B9A /* osolapp */ = {
 			isa = PBXGroup;
 			children = (
+				08F30808272037C500B2B148 /* GoogleService-Info.plist */,
 				088E9F89270A8A7C003B6625 /* osolapp.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -131,7 +132,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				083A02D5270ABEBB00856D39 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* osolapp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* osolappTests */,
@@ -250,7 +250,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				083A02D6270ABEBB00856D39 /* GoogleService-Info.plist in Resources */,
+				08F30809272037C500B2B148 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +451,8 @@
 			baseConfigurationReference = F7EC9AB4A9966325226D30F3 /* Pods-osolapp-osolappTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = ATV657C26A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -478,7 +480,9 @@
 			baseConfigurationReference = FB446E011269EED3A36AD944 /* Pods-osolapp-osolappTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = ATV657C26A;
 				INFOPLIST_FILE = osolappTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -504,7 +508,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = osolapp/osolapp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATV657C26A;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = osolapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +525,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = osolapp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -531,7 +539,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = osolapp/osolapp.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ATV657C26A;
 				INFOPLIST_FILE = osolapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = osolapp;
+				PROVISIONING_PROFILE_SPECIFIER = osolapppushtest;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

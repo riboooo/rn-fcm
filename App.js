@@ -3,10 +3,21 @@ import {StyleSheet, View} from 'react-native';
 import {WebView} from 'react-native-webview';
 import messaging from '@react-native-firebase/messaging';
 
+async function requestUserPermission() {
+  const authStatus = await messaging().requestPermission();
+  const enabled =
+    authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+    authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+
+  if (enabled) {
+    console.log('Authorization status:', authStatus);
+  }
+}
+requestUserPermission();
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log('Message handled in the background!', remoteMessage);
 });
-const domain = 'http://krp.kaist.ac.kr';
+const domain = 'https://www.naver.com';
 
 const checkToken = async () => {
   const fcmToken = await messaging().getToken();
